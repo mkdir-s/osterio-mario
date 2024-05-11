@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Info from "./components/info/Info";
 import Atmosphere from "./components/atmosphere/Atmosphere";
+import Tastes from "./components/tastes/Tastes";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Info />
       <Atmosphere />
+      <Tastes />
     </>
   );
 }
