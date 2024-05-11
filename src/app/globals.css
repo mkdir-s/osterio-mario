@@ -75,6 +75,38 @@
     }
   }
 
+  @font-face {
+    font-family: 'Arial';
+    src: url('./assets/fonts/ArialMT.woff2') format('woff2'),
+        url('./assets/fonts/ArialMT.woff') format('woff'),
+        url('./assets/fonts/ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro';
+    src: url('./assets/fonts/OrchideaPro-Light.woff2') format('woff2'),
+        url('./assets/fonts/OrchideaPro-Light.woff') format('woff'),
+        url('./assets/fonts/OrchideaPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('./assets/fonts/Arial-BoldMT.woff2') format('woff2'),
+        url('./assets/fonts/Arial-BoldMT.woff') format('woff'),
+        url('./assets/fonts/Arial-BoldMT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
   body {
     font-family: 'PT serif', serif;
     font-weight: 400;
