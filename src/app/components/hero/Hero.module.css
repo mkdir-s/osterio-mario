@@ -1,0 +1,60 @@
+.hero {
+  height: 100vh;
+  background-image: url(../../assets/images//hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10%;
+  text-align: center;
+}
+.heroImg {
+  margin-bottom: 15px;
+  margin: 0 auto;
+}
+.title {
+  font-family: "Orchidea Pro", sans-serif;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.subtitle {
+  font-family: "PT Serif", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 164%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+}
+.linkText {
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #c98a62;
+  margin-left: 20px;
+}
+.bottom {
+  position: absolute;
+  bottom: 2%;
+  margin: 0 auto;
+}
+.bottomText {
+  font-family: "PT Serif", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 225%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.bottomImg {
+  margin: 0 auto; 
+}
