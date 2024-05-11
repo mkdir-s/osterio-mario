@@ -1,0 +1,143 @@
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.atmosphere {
+  background: #171d21;
+  padding-bottom: 10%;
+  position: relative;
+}
+.top {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -5%;
+}
+.topTitle {
+  font-family: "Orchidea Pro", sans-serif;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #fff;
+  max-width: 645px;
+  position: absolute;
+  right: -75%;
+  bottom: 20%;
+}
+.topImages {
+  position: relative;
+}
+.topImg2 {
+  position: absolute;
+  bottom: -15%;
+  left: -15%;
+}
+.content {
+  padding-top: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contentLeft {
+  max-width: 440px;
+}
+.title {
+  margin-bottom: 30px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #c98a62;
+}
+.descr {
+  margin-bottom: 30px;
+  font-family: "PT Serif", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 164%;
+  color: #fff;
+}
+.descrBlock {
+  display: block;
+  margin-bottom: 20px;
+}
+.linkText {
+  margin-left: 30px;
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #c98a62;
+}
+
+.chefTop {
+  margin-top: 160px;
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.chefTopTitle {
+  font-family: "Orchidea Pro", sans-serif;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  max-width: 640px;
+  right: 13%;
+}
+.chefContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chefContentLeft {
+  max-width: 460px;
+}
+.chefTitle {
+  margin-bottom: 30px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #c98a62;
+}
+.chefDescr {
+  font-family: "PT Serif", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 164%;
+  color: #fff;
+}
+.chefDescrBlock {
+  display: block;
+  margin-bottom: 20px;
+}
+.chefLinkText {
+  margin-left: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #c98a62;
+}
+.chefRight {
+  position: relative;
+}
+.chefRight2 {
+  position: absolute;
+  bottom: -15%;
+  right: -20%;
+}

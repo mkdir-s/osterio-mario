@@ -4,6 +4,7 @@ import Hero from "./components/hero/Hero";
 import Info from "./components/info/Info";
 import Atmosphere from "./components/atmosphere/Atmosphere";
 import Tastes from "./components/tastes/Tastes";
+import Professionals from "./components/professionals/Professionals";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Info />
       <Atmosphere />
       <Tastes />
+      <Professionals />
     </>
   );
 }

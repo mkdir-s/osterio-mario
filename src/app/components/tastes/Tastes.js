@@ -8,7 +8,7 @@ import linkImg from "@/app/assets/images/arrow-right.png";
 
 const Tastes = () => {
   return (
-    <section className={styles.info}>
+    <section className={styles.tastes}>
       <div className={styles.container}>
         <div className={styles.top}>
           <Image
