@@ -8,11 +8,21 @@ import Professionals from "./components/professionals/Professionals";
 import Interior from "./components/interior/Interior";
 import Reservation from "./components/reservation/Reservation";
 import Footer from "./components/footer/Footer";
+import { ConfigProvider } from "antd";
 
 export default function Home() {
   return (
-    <>
-      {/* <Header /> */}
+    <ConfigProvider
+      theme={{
+        token: {
+          // colorText: "#00b96b",
+          borderRadius: 2,
+          colorBgContainer: "transparent",
+          colorTextPlaceholder: 'rgba(255, 255, 255, 0.5)',
+        },
+      }}
+    >
+      <Header />
       <Hero />
       <Info />
       <Atmosphere />
@@ -21,6 +31,6 @@ export default function Home() {
       <Interior />
       <Reservation />
       <Footer />
-    </>
+    </ConfigProvider>
   );
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./Header.module.css";
 import logo from "@/app/assets/images/logo.png";
@@ -11,13 +13,27 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { useState, useEffect } from "react";
 
 const Header = () => {
+  const [isScrolledHeader, setIsScrolledHeader] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setIsScrolledHeader(isScrolled);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isScrolledHeader ? styles.headerScrolled : null}`}>
       <div className={styles.container}>
         <div className={styles.wrapper}>
-          <Image src={logo} width={150} height={100} />
+          <Link href={'/'}><Image src={logo} width={150} height={100} /></Link>
           <nav className={styles.nav}>
             <ul className={styles.list}>
               <li className={styles.listItem}>
@@ -60,15 +76,42 @@ const Header = () => {
               </select>
               {/*  */}
               <Sheet>
-                <SheetTrigger><Image className={styles.menu} src={menuIcon}></Image></SheetTrigger>
+                <SheetTrigger>
+                  <Image className={styles.menu} src={menuIcon}></Image>
+                </SheetTrigger>
                 <SheetContent>
-                  <SheetHeader>
-                    <SheetTitle>Are you absolutely sure?</SheetTitle>
-                    <SheetDescription>
-                      This action cannot be undone. This will permanently delete
-                      your account and remove your data from our servers.
-                    </SheetDescription>
-                  </SheetHeader>
+                  <ul className={styles.listMenu}>
+                    <li className={styles.listItem}>
+                      <Link className={styles.listLink} href={"/"}>
+                        детям
+                      </Link>
+                    </li>
+                    <li className={styles.listItem}>
+                      <Link className={styles.listLink} href={"/"}>
+                        программа лояльности
+                      </Link>
+                    </li>
+                    <li className={styles.listItem}>
+                      <Link className={styles.listLink} href={"/"}>
+                        контакты
+                      </Link>
+                    </li>
+                    <li className={styles.listItem}>
+                      <Link className={styles.listLink} href={"/"}>
+                        франчайзинг
+                      </Link>
+                    </li>
+                    <li className={styles.listItem}>
+                      <Link className={styles.listLink} href={"/"}>
+                        вакансии
+                      </Link>
+                    </li>
+                    <li className={styles.listItem}>
+                      <Link className={styles.listLink} href={"/"}>
+                        меню для заказа и доставки
+                      </Link>
+                    </li>
+                  </ul>
                 </SheetContent>
               </Sheet>
             </div>

@@ -17,7 +17,7 @@ const Hero = () => {
           <Image className={styles.linkImg} src={arrowRight}></Image>
           <p className={styles.linkText}>меню для заказа</p>
         </a>
-        <a href="#" className={styles.bottom}>
+        <a href="#info" className={styles.bottom}>
           <p className={styles.bottomText}>Листайте вниз</p>
           <Image className={styles.bottomImg} src={arrowsDown}></Image>
         </a>

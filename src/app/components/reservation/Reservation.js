@@ -2,8 +2,8 @@ import Image from "next/image";
 import styles from "./Reservation.module.css";
 import Link from "next/link";
 import img from "@/app/assets/images/reservation-img.jpg";
-import { Select } from "antd";
-import linkImg from '@/app/assets/images/arrow-right.png';
+import { Select, DatePicker, TimePicker, InputNumber } from "antd";
+import linkImg from "@/app/assets/images/arrow-right.png";
 
 const Reservation = () => {
   return (
@@ -37,30 +37,46 @@ const Reservation = () => {
                 </option>
               </select>
               <div className={`df aic ${styles.bottomWrapper}`}>
-                <select className={styles.select}>
+                <DatePicker
+                  style={{
+                    // background: "none",
+                    // color: "rgba(255, 255, 255, 0.5)",
+                    border: "1px solid rgba(192, 132, 94, 0.4)",
+                    padding: "12px 24px",
+                  }}
+                  className={styles.datePicker}
+                  placeholder="Дата"
+                />
+                <TimePicker placeholder="Время" style={{
+                  // color: "rgba(255, 255, 255, 0.5)",
+                    border: "1px solid rgba(192, 132, 94, 0.4)",
+                    padding: "12px 24px",}} />
+                {/* <InputNumber style={{width: '35%', padding: "9px 24px"}} min={1} max={10} placeholder="Гостей" /> */}
+                <input type="input" className={`${styles.select} ${styles.selectGuests}`} placeholder="Гостей" />
+                {/* <select className={styles.select}>
                   <option value="restaurant" className={styles.option}>
                     Ресторан
                   </option>
                   <option value="restaurant" className={styles.option}>
                     Ресторан
                   </option>
-                </select>
-                <select className={styles.select}>
+                </select> */}
+                {/* <select className={styles.select}>
                   <option value="restaurant" className={styles.option}>
                     Ресторан
                   </option>
                   <option value="restaurant" className={styles.option}>
                     Ресторан
                   </option>
-                </select>
-                <select className={styles.select}>
+                </select> */}
+                {/* <select className={styles.select}>
                   <option value="restaurant" className={styles.option}>
                     Ресторан
                   </option>
                   <option value="restaurant" className={styles.option}>
                     Ресторан
                   </option>
-                </select>
+                </select> */}
               </div>
               <textarea
                 rows={3}

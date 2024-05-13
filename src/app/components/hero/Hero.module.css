@@ -3,7 +3,7 @@
   background-image: url(../../assets/images//hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 7%;
+  padding-top: 8%;
   text-align: center;
 }
 .heroImg {
@@ -59,17 +59,26 @@
   margin: 0 auto; 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   .hero {
-    padding-top: 75%;
+    padding-top: 15%;
+  }
+  .bottom {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .hero {
+    padding-top: 35%;
     background-image: url('../../assets/images/hero-bg-mobile.jpg');
-    background-position: bottom;
+    background-position: center;
   }
   .heroImg {
     display: none;
   }
   .bottom {
-    left: 37%;
+    display: block;
+    left: 44%;
   }
   .bottomText {
     font-size: 14px;
@@ -93,5 +102,11 @@
   .linkText {
     margin-right: 15px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 470px) {
+  .bottom {
+    left: 38%;
   }
 }

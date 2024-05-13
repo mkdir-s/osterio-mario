@@ -24,7 +24,7 @@ const Interior = () => {
         </div>
         {/* <Swiper
           // install Swiper modules
-          modules={[Navigation, Pagination]}
+          // modules={[Navigation, Pagination]}
           spaceBetween={50}
           slidesPerView={3}
           // navigation

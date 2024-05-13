@@ -106,7 +106,9 @@
 }
 
 
-
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: 'PT serif', serif;
     font-weight: 400;
