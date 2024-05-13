@@ -5,6 +5,7 @@ import img1 from "@/app/assets/images/atmosphere-1.jpg";
 import img2 from "@/app/assets/images/atmosphere-2.jpg";
 import img3 from "@/app/assets/images/atmosphere-3.jpg";
 import linkImg from "@/app/assets/images/arrow-right.png";
+import imgMobile from '@/app/assets/images/atmosphere-mobile.jpg';
 
 const Atmosphere = () => {
   return (
@@ -16,6 +17,10 @@ const Atmosphere = () => {
             <Image src={img2} className={styles.topImg2}></Image>
           </div>
           <h2 className={styles.topTitle}>Атмосфера уюта и спокойствия</h2>
+        </div>
+        <div className={styles.topMobile}>
+          <Image src={img1} className={styles.topMobileImg}></Image>
+          <h2 className={styles.topMobileTitle}>настоящая Рецептура</h2>
         </div>
         <div className={styles.content}>
           <div className={styles.contentLeft}>

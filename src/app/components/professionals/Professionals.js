@@ -19,6 +19,10 @@ const Professionals = () => {
           </div>
           <h2 className={styles.topTitle}>Команда профессионалов</h2>
         </div>
+        <div className={styles.topMobile}>
+          <Image src={img1} className={styles.topMobileImg}></Image>
+          <h2 className={styles.topMobileTitle}>Команда профессионалов</h2>
+        </div>
         <div className={styles.content}>
           <div className={styles.contentLeft}>
             <h4 className={styles.title}>талантливая команда</h4>

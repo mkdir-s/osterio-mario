@@ -141,3 +141,93 @@
   bottom: -15%;
   right: -20%;
 }
+.topMobile {
+  display: none;
+}
+
+@media (max-width: 1360px) {
+  .topTitle {
+    right: -45%;
+    bottom: 5%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .top {
+    display: none;
+  }
+  .topMobile {
+    display: block;
+    position: relative;
+  }
+  .topMobileImg {
+    object-fit: cover;
+    width: 100%;
+  }
+  .topMobileTitle {
+    font-family: "Orchidea Pro", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    bottom: -7%;
+    max-width: 340px;
+  }
+  .content {
+    padding-top: 15%;
+  }
+  .chefTopTitle {
+    bottom: -25%;
+  }
+}
+@media (max-width: 720px) {
+  .content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .chefTop {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .chefTopTitle {
+    font-size: 30px;
+    bottom: -15%;
+    left: 2%;
+  }
+  .chefContent {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .chefTitle {
+    font-size: 16px;
+  }
+  .chefDescr {
+    font-size: 16px;
+  }
+  .chefContent {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 470px) {
+  .topMobileTitle {
+    font-size: 28px;
+    left: 0%;
+    bottom: -10%;
+  }
+  .content {
+    padding-top: 20%;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .descr {
+    font-size: 16px;
+  }
+  .linkText {
+    font-size: 12px; 
+    margin-left: 10px;
+  }
+}

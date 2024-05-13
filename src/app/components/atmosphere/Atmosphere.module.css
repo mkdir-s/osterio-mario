@@ -75,3 +75,72 @@
   text-transform: uppercase;
   color: #c98a62;
 }
+.topMobile {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .topTitle {
+    right: -42%;
+  }
+  .top {
+    top: -4%;
+  }
+}
+@media (max-width: 1000px) {
+  .top {
+    display: none;
+  }
+  .content {
+    padding-top: 0;
+  }
+  .topMobile {
+    display: block;
+    position: relative;
+    margin-bottom: 25%;
+  }
+  .topMobileImg {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+  }
+  .topMobileTitle {
+    font-family: "Orchidea Pro", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    bottom: -17%;
+    left: 5%;
+    max-width: 215px;
+  }
+}
+
+@media (max-width: 720px) {
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .descr {
+    font-size: 16px;
+  }
+  .linkText {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .topMobileTitle {
+    font-size: 30px;
+    bottom: -13%;
+  }
+  .topMobile {
+    margin-bottom: 30%;
+  }
+}

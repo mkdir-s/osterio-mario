@@ -71,3 +71,48 @@
   bottom: -15%;
   right: -20%;
 }
+
+@media (max-width: 800px) {
+  .top {
+    margin-top: 100px;
+  }
+  .topTitle {
+    font-size: 35px;
+    bottom: -10%;
+    left: 35%;
+    width: 100%;
+  }
+  .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .right2 {
+    width: 50%;
+    bottom: -5%;
+    right: 0;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .descr {
+    font-size: 16px;
+  }
+  .linkText {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .top {
+    margin-bottom: 75px;
+  }
+  .topImg {
+    width: 60%;
+  }
+  .topTitle {
+    font-size: 30px;
+    bottom: -18%;
+    left: 20%;
+  }
+}
