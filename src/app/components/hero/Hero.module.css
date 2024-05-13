@@ -3,7 +3,7 @@
   background-image: url(../../assets/images//hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 10%;
+  padding-top: 7%;
   text-align: center;
 }
 .heroImg {
@@ -25,7 +25,7 @@
   line-height: 164%;
   text-align: center;
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .link {
   display: flex;
@@ -44,7 +44,7 @@
 .bottom {
   position: absolute;
   bottom: 2%;
-  margin: 0 auto;
+  left: 46%;
 }
 .bottomText {
   font-family: "PT Serif", sans-serif;
@@ -57,4 +57,41 @@
 }
 .bottomImg {
   margin: 0 auto; 
+}
+
+@media (max-width: 500px) {
+  .hero {
+    padding-top: 75%;
+    background-image: url('../../assets/images/hero-bg-mobile.jpg');
+    background-position: bottom;
+  }
+  .heroImg {
+    display: none;
+  }
+  .bottom {
+    left: 37%;
+  }
+  .bottomText {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 44px;
+    line-height: 120%;
+    max-width: 340px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .subtitle {
+    font-size: 20px;
+    line-height: 180%;  
+    max-width: 280px;
+    margin: 0 auto 40px;
+  }
+  .linkImg {
+    order: 1;
+  }
+  .linkText {
+    margin-right: 15px;
+    font-size: 12px;
+  }
 }

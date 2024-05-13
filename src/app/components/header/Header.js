@@ -1,8 +1,16 @@
 import Image from "next/image";
 import styles from "./Header.module.css";
 import logo from "@/app/assets/images/logo.png";
-import menuIcon from '@/app/assets/images/menu-icon.png'
+import menuIcon from "@/app/assets/images/menu-icon.png";
 import Link from "next/link";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const Header = () => {
   return (
@@ -50,7 +58,19 @@ const Header = () => {
                 <option value="">EN</option>
                 <option value="">RU</option>
               </select>
-              <Image className={styles.menu} src={menuIcon}></Image>
+              {/*  */}
+              <Sheet>
+                <SheetTrigger><Image className={styles.menu} src={menuIcon}></Image></SheetTrigger>
+                <SheetContent>
+                  <SheetHeader>
+                    <SheetTitle>Are you absolutely sure?</SheetTitle>
+                    <SheetDescription>
+                      This action cannot be undone. This will permanently delete
+                      your account and remove your data from our servers.
+                    </SheetDescription>
+                  </SheetHeader>
+                </SheetContent>
+              </Sheet>
             </div>
           </div>
         </div>
