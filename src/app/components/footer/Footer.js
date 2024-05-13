@@ -106,10 +106,12 @@ const Footer = () => {
             <p className={styles.copy}>2015–2022 © Osteria Mario</p>
             <div className={styles.bottomRight}>
               <span className={styles.bottomText}>Наши партнеры</span>
+              <div className={styles.bottomPartners}>
               <Image src={partner1} className={styles.bottomImage}></Image>
               <Image src={partner2} className={styles.bottomImage}></Image>
               <Image src={partner3} className={styles.bottomImage}></Image>
               <Image src={partner4} className={styles.bottomImage}></Image>
+              </div>
             </div>
           </div>
         </div>

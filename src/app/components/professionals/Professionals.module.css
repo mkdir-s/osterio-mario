@@ -163,6 +163,7 @@
   .topMobileImg {
     object-fit: cover;
     width: 100%;
+    height: 400px;
   }
   .topMobileTitle {
     font-family: "Orchidea Pro", sans-serif;

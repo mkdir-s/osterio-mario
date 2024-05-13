@@ -28,3 +28,22 @@
   color: #fff;
   max-width: 640px;
 }
+
+@media (max-width: 720px) {
+  .title {
+    text-align: left;
+    font-size: 35px;
+    max-width: 300px;
+    padding-left: 10px;
+  }
+  .subtext {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .subblock {
+    flex-direction: column;
+  }
+  .interior {
+    padding-bottom: 3%;
+  }
+}

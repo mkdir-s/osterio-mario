@@ -102,3 +102,63 @@
   color: #86888b;
   margin-right: 20px;
 }
+.bottomPartners {
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 950px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .center {
+    order: 1;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .left {
+    order: 2;
+    padding-top: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .right {
+    order: 3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .centerText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .bottomWrapper {
+    flex-direction: column;
+  }
+  .copy {
+    order: 2;
+  }
+  .bottomRight {
+    order: 1;
+    margin-bottom: 25px;
+    flex-direction: column;
+  }
+  .bottomText {
+    margin-bottom: 25px;
+  }
+  .bottomPartners {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .centerText {
+    font-size: 22px;
+  }
+}
