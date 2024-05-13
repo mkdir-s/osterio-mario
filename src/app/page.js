@@ -7,6 +7,7 @@ import Tastes from "./components/tastes/Tastes";
 import Professionals from "./components/professionals/Professionals";
 import Interior from "./components/interior/Interior";
 import Reservation from "./components/reservation/Reservation";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Professionals />
       <Interior />
       <Reservation />
+      <Footer />
     </>
   );
 }
