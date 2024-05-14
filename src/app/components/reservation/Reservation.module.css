@@ -86,7 +86,7 @@
   margin-bottom: 25px;
 }
 .linkText {
-  margin-left: 10px;
+  margin-left: 15px;
   font-family: "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -95,6 +95,19 @@
   text-transform: uppercase;
   color: #c98a62;
 }
+.linkImg {
+  transition: all .4s;
+}
+.linkText {
+  transition: all .4s;
+}
+.descrBottom:hover .linkText {
+  transform: scale(1.03);
+}
+.descrBottom:hover .linkImg {
+  transform: scale(1.2);
+}
+
 
 @media (max-width: 1000px) {
   .wrapper {
