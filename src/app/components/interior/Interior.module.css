@@ -58,6 +58,9 @@
   object-fit: cover;
   height: 620px;
 }
-.swiper-slide-active {
+/* .swiper-slide-active {
   transform: scale(2);
+} */
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 50px;
 }

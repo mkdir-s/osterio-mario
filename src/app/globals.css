@@ -6,6 +6,9 @@
     :root {
       --background: 0 0% 100%;
       --foreground: 222.2 84% 4.9%;
+      --swiper-pagination-bottom: 5%;
+      --swiper-navigation-top-offset: 94%;
+      --swiper-navigation-sides-offset: 42%;
 
       --card: 0 0% 100%;
       --card-foreground: 222.2 84% 4.9%;
@@ -118,4 +121,7 @@
   }
   .aic {
     align-items: center;
+  }
+  .swiper-wrapper {
+    padding: 100px 0;
   }
