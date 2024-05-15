@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./Tastes.module.css";
 import Link from "next/link";
@@ -5,8 +7,12 @@ import tastes1 from "@/app/assets/images/tastes-1.jpg";
 import tastes2 from "@/app/assets/images/tastes-2.jpg";
 import tastes3 from "@/app/assets/images/tastes-3.jpg";
 import linkImg from "@/app/assets/images/arrow-right.png";
+import useParallax from "@/hooks/useParallax";
 
 const Tastes = () => {
+  const right1Offset = useParallax(0.05);
+  const right2Offset = useParallax(0.02);
+
   return (
     <section className={styles.tastes}>
       <div className={styles.container}>
@@ -43,12 +49,13 @@ const Tastes = () => {
             </a>
           </div>
           <div className={styles.right}>
-            <Image src={tastes2} className={styles.right1}></Image>
+            <Image src={tastes2} className={styles.right1} style={{ transform: `translateY(${right1Offset}px)` }}></Image>
             <Image
               src={tastes3}
               className={styles.right2}
               width={450}
               height={290}
+              style={{ transform: `translateY(${right2Offset}px)` }}
             ></Image>
           </div>
         </div>

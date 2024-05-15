@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./Professionals.module.css";
 import Link from "next/link";
@@ -7,15 +9,19 @@ import img3 from "@/app/assets/images/professionals-3.jpg";
 import img4 from "@/app/assets/images/professionals-4.jpg";
 import img5 from "@/app/assets/images/professionals-5.jpg";
 import linkImg from "@/app/assets/images/arrow-right.png";
+import useParallax from "@/hooks/useParallax";
 
 const Professionals = () => {
+  const topImg1Offset = useParallax(0.02);
+  const topImg2Offset = useParallax(0.01);
+
   return (
     <section className={styles.atmosphere}>
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.topImages}>
-            <Image src={img1} className={styles.topImg1}></Image>
-            <Image src={img2} className={styles.topImg2}></Image>
+            <Image src={img1} className={styles.topImg1} style={{ transform: `translateY(${topImg1Offset}px)` }}></Image>
+            <Image src={img2} className={styles.topImg2} style={{ transform: `translateY(${topImg2Offset}px)` }}></Image>
           </div>
           <h2 className={styles.topTitle}>Команда профессионалов</h2>
         </div>

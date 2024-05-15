@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./Info.module.css";
 import Link from "next/link";
@@ -5,8 +7,13 @@ import info1 from "@/app/assets/images/info-1.jpg";
 import info2 from "@/app/assets/images/info-2.jpg";
 import info3 from "@/app/assets/images/info-3.jpg";
 import linkImg from "@/app/assets/images/arrow-right.png";
+import useParallax from "@/hooks/useParallax";
 
 const Info = () => {
+  const topImgOffset = useParallax(0.3);
+  const right1Offset = useParallax(0.1);
+  const right2Offset = useParallax(0.05);
+
   return (
     <section className={styles.info} id="info">
       <div className={styles.container}>
@@ -42,8 +49,8 @@ const Info = () => {
             </a>
           </div>
           <div className={styles.right}>
-            <Image src={info2} className={styles.right1}></Image>
-            <Image src={info3} className={styles.right2} width={450} height={290}></Image>
+            <Image src={info2} className={styles.right1}               style={{ transform: `translateY(${right1Offset}px)` }}></Image>
+            <Image src={info3} className={styles.right2} style={{ transform: `translateY(${right2Offset}px)` }} width={450} height={290}></Image>
           </div>
         </div>
       </div>

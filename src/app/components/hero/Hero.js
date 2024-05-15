@@ -8,10 +8,35 @@ import arrowRight from "@/app/assets/images/arrow-right.png";
 import heroImg from "@/app/assets/images/hero-img.png";
 import heroBg from "@/app/assets/images/hero-bg.jpg";
 import { motion } from "framer-motion";
+import React, { useState, useEffect } from 'react';
 
 const Hero = () => {
+  const [backgroundPosition, setBackgroundPosition] = useState({ x: 50, y: 50 });
+
+    const handleMouseMove = (e) => {
+        const { innerWidth: width, innerHeight: height } = window;
+        const { clientX: mouseX, clientY: mouseY } = e;
+
+        const xPos = (mouseX / width) - 0.5;
+        const yPos = (mouseY / height) - 0.5;
+
+        const moveX = xPos * 40; 
+        const moveY = yPos * 40;
+
+        setBackgroundPosition({ x: 50 + moveX, y: 50 + moveY });
+    };
+
+    useEffect(() => {
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+        };
+    }, []);
+
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} style={{
+      backgroundPosition: `${backgroundPosition.x}% ${backgroundPosition.y}%`,
+  }}>
       <div className={styles.container}>
         <motion.div
           initial={{ scale: 0 }}
